@@ -1,0 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: hsl(243, 96%, 9%);
+  color: #ffffff;
+  margin: 0px;  
+  
+}
+
+.App{
+  max-width: 95%;
+  padding: 10px;
+  margin: 0px auto;
+}
+button{
+  cursor: pointer;
+}
+

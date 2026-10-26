@@ -1,0 +1,113 @@
+
+.home-text{
+  grid-area: hero;
+  width: fit-content;
+  margin: 2rem 0px;
+}
+
+
+.home h1{
+  font:800 clamp(3rem,11vw,7rem)/0.95 var(--head);
+  letter-spacing:-.03em;
+  margin:0 0 1.5rem;
+  color:var(--accent);
+  transition:color .25s
+}
+
+.home-text p{
+  font-size: 1.3rem;
+  font-family: var(--body);
+  max-width:36rem;
+  margin:0 0 2rem;
+  color: var(--text-color)
+}
+
+.socials{
+  display: flex;
+  gap: 10px;
+}
+
+.btns{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem
+}
+
+.btn{
+  display:inline-block;
+  padding:.75rem 1.4rem;
+  border-radius:999px;
+  font-weight:600;
+  text-decoration:none;
+  border:2px solid var(--accent);
+  transition:background .25s,border-color .25s
+}
+
+.btn.pri{
+  background:var(--accent);
+  color:var(--on-accent)
+}
+
+.btn.sec{
+  color:var(--text-color)
+}
+
+.btn.sec:hover{
+  background:var(--surface)
+}
+
+.picker{
+  margin-top:2.5rem;
+  padding:1rem 1.25rem;
+  background:var(--surface)
+  ;border:1px solid var(--line)
+  ;border-radius:12px;
+  display:inline-flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.9rem;
+  font-size:.95rem;
+  color:var(--muted)
+}
+
+.picker code{
+  font:500 .9rem ui-monospace,Menlo,Consolas,monospace;
+  color:var(--ink)
+}
+
+.sw{
+  display:flex;
+  gap:.5rem
+}
+
+.sw button{
+  width:2rem;
+  height:2rem;
+  border-radius:50%;
+  border:3px solid var(--surface);
+  cursor:pointer;padding:0
+}
+.notcheck{
+  box-shadow:0 0 0 2px var(--line);
+}
+.check{
+  background-color: grey;
+  box-shadow:0 0 0 2px var(--text-color);
+}
+
+.blue-picker{
+  background-color: #3D5AFE;
+}
+
+.green-picker{
+  background-color: #0A8A5F;
+}
+
+.red-picker{
+  background-color: #D93F1F;
+}
+
+.purple-picker{
+  background-color: #7C4DFF;
+}
+

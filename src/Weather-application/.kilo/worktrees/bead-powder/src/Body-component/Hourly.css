@@ -1,0 +1,111 @@
+.hourly{
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  width: 35%;
+  min-width: 450px;
+  height: 92.4vh;
+  flex-direction: column;
+  gap: 10px;
+  background-color: hsl(243, 27%, 20%);
+  border-radius: 15px;
+  border: hsl(243, 23%, 30%) solid 1px;
+  overflow: hidden;
+}
+.hourly-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;  
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.hour-head{
+  font-size: 1.2rem;
+}
+
+.hour-weather{
+  width: 60px;
+}
+
+.hourly-forecast{
+  padding: 10px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-x: hidden;
+}
+.hourly-forecast::-webkit-scrollbar{
+  width: 5px;
+}
+.hourly-forecast::-webkit-scrollbar-track{
+  background :transparent;
+  border-radius: 5px
+}
+.hourly-forecast::-webkit-scrollbar-thumb{
+  background-color: hsl(243, 23%, 24%);
+  border-radius: 10px;
+}
+
+.hour{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  height: calc(100% / 8);
+  background-color: hsl(243, 23%, 24%);
+  border: solid hsl(243, 23%, 30%) 1px;
+  border-radius: 10px;
+}
+.time-weather{
+  display: flex;
+  flex-direction: row;
+}
+
+.time{
+  display: flex;
+  align-items: center;
+}
+.temp{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.day-drop-down{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.day-drop-down-header{
+  display: flex;
+  gap: 10px;
+  background-color: hsl(243, 23%, 30%);
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 9px;
+  cursor: pointer;
+}
+.day-drop-down-header:hover{
+  background-color: hsl(243, 23%, 25%);
+}
+.day-options{
+  width: 180px;
+  position: absolute;
+  top: 125%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(243, 27%, 20%);
+  border-radius: 10px;
+  height: 0px;
+  overflow: hidden;
+}
+@media (min-width: 360px) and (max-width: 700px){
+  .hourly{
+    width: 100%;
+    min-width: 300px;
+    height: 90vh;
+  }
+}

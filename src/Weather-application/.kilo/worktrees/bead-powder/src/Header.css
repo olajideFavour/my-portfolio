@@ -1,0 +1,84 @@
+.header{
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unit-drop-down{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: hsl(250, 6%, 84%);
+  z-index: 1;
+}
+.unit-header{
+  background-color: hsl(243, 27%, 20%);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.unit-header:hover{
+  background-color: hsl(243, 23%, 24%);
+}
+.unit-option{
+  position: absolute;
+  top: 50px;
+  background-color: hsl(243, 27%, 20%);
+  border-radius: 10px;
+  width: 200px;
+  height: 0px;
+  overflow: hidden;
+}
+button{
+  background-color: hsl(243, 27%, 20%);
+  color: hsl(250, 6%, 84%);
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-weight: 500;
+}
+button:hover{
+  background-color: hsl(243, 23%, 24%);
+}
+.check{
+  background-color: hsl(243, 23%, 24%);
+}
+
+hr{
+  color: blue;
+}
+
+.option{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  border-bottom: solid 1px ;
+}
+.option:last-child{
+  border-bottom: none;
+}
+
+h4{
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: 500;
+}
+h4:hover{
+  background-color: hsl(243, 23%, 24%);}
+h5{
+  color: hsl(240, 6%, 70%);
+  padding: 0px 10px;
+  font-weight: 400;
+}
+h6{
+  font-size: .9rem;
+  font-weight: 400;
+}

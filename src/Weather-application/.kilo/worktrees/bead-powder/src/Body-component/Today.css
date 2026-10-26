@@ -1,0 +1,175 @@
+.today{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "DM Sans", sans-serif;
+}
+.today-board{
+  background-image: url(../assets/images/bg-today-large.svg);
+  background-repeat: no-repeat;
+  padding: 10px;
+  background-size: cover;
+  display: grid; 
+  height: 250px;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 25px;
+  flex-grow: 1;
+}
+.location{
+  width: 370px;
+}
+.board-loading{
+  display: flex;
+  justify-content: center;
+  background-image: none;
+  background-color: hsl(243, 27%, 20%);
+  border: hsl(243, 23%, 30%) solid 1px;
+}
+
+.itIsLoading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.animation{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+.b{
+  position: absolute;
+}
+.loader1{
+  right: 0px;
+  animation: juggleAnimation 1s ease-in infinite alternate;
+  animation-delay: 0s;
+}
+.loader2{
+  left: -8px;
+  bottom: 0px;
+  animation: juggleAnimation 1s ease-in infinite alternate;
+  animation-delay: 0.8s;
+}
+.loader3{
+  left: 15px;
+  bottom: 3px;
+  animation: juggleAnimation 1s ease-in infinite alternate;
+  animation-delay: 0.4s;
+}
+
+.location-date{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.today-forecast{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.weather-img{
+  width: 90px;
+}
+.today-temp{
+  font-size: 6rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h2{
+  font-size: 2.5rem;
+  width: 100px;
+}
+h3{
+  color: hsl(240, 6%, 70%);
+  font-size: 1rem;
+}
+.forecast{
+  display: flex;
+  gap: 10px;
+  flex-flow: wrap;
+}
+
+.forecast-section{
+  background-color: hsl(243, 27%, 20%);
+  border: hsl(243, 23%, 30%) solid 1px;
+  border-radius: 20px;
+  width: 24%;
+  height: 140px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 190px;
+}
+.forecast-heading{
+  color: hsl(250, 6%, 84%);
+  font-size: 1.4rem;
+}
+
+.value{
+  color:hsl(250, 6%, 84%);
+  font-size: 2.5rem;
+}
+
+@media (min-width: 360px) and (max-width: 700px){
+  .today{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+  }
+  .today-temp{
+    margin-top: 20px;
+    font-size: 4.5rem;
+  }
+  .today-board{
+    background-image: url(../assets/images/bg-today-small.svg);
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .location{
+    width: 100%;
+  }
+  .board-loading{
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    background-color: hsl(243, 27%, 20%);
+    border: hsl(243, 23%, 30%) solid 1px;
+  }
+  .forecast-section{
+      min-width: 160px;
+  }
+  .value{
+    font-size: 2rem;
+  }
+
+}
+
+
+@keyframes juggleAnimation {
+  from {
+    bottom: -5px;
+  }
+  to {
+    bottom: 3px;
+  }
+}

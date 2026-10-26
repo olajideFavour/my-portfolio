@@ -1,0 +1,7 @@
+.body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text-color);
+  font:400 1.0625rem/1.65 var(--body)
+}
+

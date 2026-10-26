@@ -1,0 +1,16 @@
+.projects .projects-container{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.projects .projects-container a {
+  max-width: 500px
+}
+
+.projects a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+

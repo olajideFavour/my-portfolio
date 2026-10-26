@@ -1,0 +1,30 @@
+.contact .big{
+  display:block;
+  font:800 clamp(1.4rem,5vw,2.6rem)/1.2 var(--head);
+  word-break:break-word;
+  color:var(--accent);
+  text-decoration:none
+}
+.contact a.big:hover{
+  text-decoration:underline
+}
+.contact ul{
+  list-style:none;
+  padding:0;
+  margin:1.5rem 0 0;
+  display:flex;flex-wrap:wrap;
+  gap:1.5rem;
+}
+
+.contact ul li img{
+  height : 2rem;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.contact ul li img:hover{
+  position: relative;
+  transform: scale(1.1);
+}
+

@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-padding-top:env(safe-area-inset-top,0px);
+  scroll-behavior:smooth
+}
+
+:root{
+  --main-color: #EEF2F7;
+  --primary-ink: #ebedf2;
+  --secondary-color: #95B0C8;
+  --accent:#3D5AFE;
+  --surface: #161E33;
+  --line:#2A3552;
+  --muted:#A3B0C8;
+  --text-color: #14213D;
+  --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+
+@media(prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --main-color: #0E1424;
+    --primary-ink: #ebedf2;
+    --secondary-color: #95B0C8;
+    --accent:#3D5AFE;
+    --surface: #161E33;
+    --line:#2A3552;
+    --text-color: #FFFFFF;
+  }
+}
+
+
+
+.app{
+  background-color: var(--main-color);
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button:hover{
+  cursor: pointer;
+}

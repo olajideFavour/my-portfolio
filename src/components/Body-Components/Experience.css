@@ -1,0 +1,42 @@
+.experience-container{
+  margin:0;
+  padding:0 0 0 1.5rem;
+  list-style:none;
+  border-left:3px solid var(--accent);
+  transition:border-color .25s
+}
+.experience-container>li{
+  position:relative;
+  padding-bottom:2rem
+}
+
+.experience-container>li::before{
+  content:"";
+  position:absolute;
+  left:-2.05rem;top:.55rem;
+  width:.85rem;height:.85rem;
+  border-radius:50%;
+  background:var(--accent);
+  border:3px solid var(--bg);
+}
+
+.experience-container h3{
+  font:600 1.25rem var(--head);
+  margin:0;
+}
+
+.meta{
+  color:var(--muted);
+  margin:.15rem 0 .7rem;
+  font-size:.95rem
+}
+
+.experience-container ul{
+  margin:0;
+  padding-left:1.1rem;
+  max-width:42rem
+}
+
+.experience-container li li{
+  margin:.25rem 0
+}
