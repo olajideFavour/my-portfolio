@@ -1,11 +1,14 @@
 import './Header.css'
 import profilePic from '../assets/profilePic.png'
+import whiteMenu from '../assets/whiteMenu.png'
+import menu from '../assets/menu.png'
 import { useState , useRef } from 'react'
 
 export function Header() {
   const [navstate , setNavState] = useState(false)
   const navref = useRef(null);
   const mediaQuery = window.matchMedia('(max-width: 651px)');
+  const mediaTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
   function toglenav() {
     if (mediaQuery.matches && navstate) {
@@ -29,7 +32,7 @@ export function Header() {
       className='togleNav'
       onClick={toglenav}
       >
-        open
+        <img src={mediaTheme.matches ? whiteMenu : menu}></img>
       </div>
       <div className='nav' ref={navref}>
         <ul>

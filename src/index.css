@@ -13,9 +13,9 @@ html{
   --primary-ink: #ebedf2;
   --secondary-color: #95B0C8;
   --accent:#3D5AFE;
-  --surface: #161E33;
+  --surface: #e0e4ed;
   --line:#2A3552;
-  --muted:#A3B0C8;
+  --muted:#464a52;
   --text-color: #14213D;
   --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
   --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -30,6 +30,7 @@ html{
     --surface: #161E33;
     --line:#2A3552;
     --text-color: #FFFFFF;
+    --muted:#A3B0C8;
   }
 }
 

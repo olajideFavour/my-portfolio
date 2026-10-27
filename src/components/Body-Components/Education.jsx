@@ -7,11 +7,11 @@ export function Education(){
       <div className="grid">
         <div className="card">
           <h3>B.Sc. Computer Science (in progress)</h3>
-          <p class="meta" >Ajayi Crowther University, Oyo<br/>September 2022 - July 2026</p>
+          <p className="meta" >Ajayi Crowther University, Oyo<br/>September 2022 - July 2026</p>
         </div>
         <div className="card">
           <h3>WASSCE</h3>
-          <p class="meta">Anglican Comprehensive High School, Lagos<br/>September 2016 - August 2022</p>
+          <p className="meta">Anglican Comprehensive High School, Lagos<br/>September 2016 - August 2022</p>
         </div>
       </div>
     </section>

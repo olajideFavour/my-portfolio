@@ -69,5 +69,9 @@
   }
   .togleNav{
     display: block;
+    padding-right: 1rem;
+  }
+  .togleNav img{
+    width: 2rem;
   }
 }
