@@ -60,7 +60,7 @@
     height: 0rem;
     background-color: var(--main-color);
     overflow: hidden;
-    transition: all 2s;
+    transition: all .5s;
   }   
   .nav ul{
     padding: 10px;

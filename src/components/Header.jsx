@@ -36,12 +36,12 @@ export function Header() {
       </div>
       <div className='nav' ref={navref}>
         <ul>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#about'>About</a></li>
-          <li><a href='#skills'>Skills</a></li>
-          <li><a href='#experience'>Experience</a></li>
-          <li><a href='#projects'>Projects</a></li>
-          <li><a href='#contact'>Contact</a></li>
+          <li><a href='#' onClick={toglenav}>Home</a></li>
+          <li><a href='#about' onClick={toglenav}>About</a></li>
+          <li><a href='#skills' onClick={toglenav}>Skills</a></li>
+          <li><a href='#experience' onClick={toglenav}>Experience</a></li>
+          <li><a href='#projects' onClick={toglenav}>Projects</a></li>
+          <li><a href='#contact' onClick={toglenav}>Contact</a></li>
         </ul>
       </div>
     </div>
